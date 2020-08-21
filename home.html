@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TOP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One|Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vegas/vegas.min.css">
+    <link rel="stylesheet" href="tbbh.css">
+    <style>
+  body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+    </style>
+  </head>
+
+  <body>
+
+      <header>
+           
+          <div class="wrapper top-menu d-flex transition ">
+               
+                <ul class="nomal-menu d-flex ">
+                    <li class="curr"><a href="home.html">TOP</a></li>
+                    <li><a href="story.html">STORY</a></li>
+                    
+                </ul>
+                <div class="heard-logo">
+                        <img  src="images/heard-logo.png" alt="">
+                  </div>
+                        <ul class="nomal-menu d-flex">
+                            <li><a href="character.html">CHARACTER</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <!-- <li><a href="">ABOUT AUTHOR</a></li> -->
+                        </ul>
+                <ul class="hamburger-menu ">
+                     <a href="home.html"><img class="brightness" src="images/small-logo.png" alt=""></a>
+                    <div id="menu-switch"> 
+                    <img class="brightness" src="images/menu.png" alt="">
+                    <img class="brightness" src="images/close.png" alt="">
+                    </div>
+                    <ul>
+                    <li><a href="story.html">STORY</a></li>
+                     <li><a href="character.html">CHARACTER</a></li>
+                     <li><a href="gallery.html">GALLERY</a></li>
+                     <!-- <li><a href="">ABOUT AUTHOR</a></li> -->
+
+                    </ul>
+                </ul>
+          </div>
+      </header>
+<div class="main-cover ">
+        <figure class="word-logo-left">
+                <img class="titie-logo" src="images/big-logo.png" alt="">
+        </figure>
+        <figure class="word-logo-right">
+                <img class="word-logo" src="images/word.png" alt="">
+        </figure>
+        <div class="col-xl-12  slideshow">
+                <!-- <img class="cover-fit" src="images/main-img.png" alt=""> -->
+            <!-- <div class="main-img cover-01 "></div> -->
+            <!-- <div class="main-img cover-02 "></div>
+            <div class="main-img cover-03"></div> -->
+        </div>
+      
+</div>
+
+<footer >
+        <div class="footer-link d-flex">
+            <a href="https://twitter.com/sinzui0301">
+                    <img class="link-logo brightness" src="images/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.pixiv.net/member.php?id=662864">
+                <img class="link-logo brightness" src="images/pixiv.png" alt="pixiv">
+            </a>
+            <a href="https://www.plurk.com/fantasysky7">
+                <img class="link-logo brightness" src="images/plurk.png" alt="plurk">
+            </a>   
+        </div>
+            <div class="copyRight">
+                    このページに掲載されている一切の文書・図版・写真等を手段や形態を問わず複製、転載することを禁じます。
+                    <br>
+                    ©2019 STELLA CHIANG★, All rights reserved.
+            </div>
+            
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="vegas/vegas.min.js"></script>
+    <script>
+            $(".main-cover").vegas({
+            slides: [
+               
+                { src: "images/slide1.png" },
+                { src: "images/slide2.png" },
+                { src: "images/slide3.png" }  
+            ],
+            delay:5500,
+            transition: 'fade',
+            animation: 'kenburns'
+        });
+    </script>
+    <script>
+    $("#menu-switch").find("img").click(function(){
+      $(".hamburger-menu").toggleClass('open');
+    });
+    </script>
+  </body>
+</html>
